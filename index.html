@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anika Bhatnagar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=40">
+</head>
+<body>
+
+<!-- Fixed nav with mix-blend-mode difference -->
+<nav class="site-nav">
+  <a href="#work" data-target="work">Work</a>
+  <a href="#resume" data-target="resume">Resume</a>
+  <a href="#contact" data-target="contact">Contact</a>
+</nav>
+<div class="nav-dots" aria-hidden="true">
+  <span class="dot" data-for="work"></span>
+  <span class="dot" data-for="resume"></span>
+  <span class="dot" data-for="contact"></span>
+</div>
+
+<!-- Fixed hero (fades on scroll) -->
+<section class="hero" id="hero">
+  <div class="hero-meta">
+    <div class="time">
+      <span class="globe" aria-hidden="true"></span>
+      <span id="clock">--:-- --</span>
+    </div>
+    <p class="welcome">Hello! I'm a product-minded engineer based in the Bay Area. At IBM, I build and design internal tools used across the organization. Outside of that, I work with small businesses on AI integrations that fit how they operate, and I'm also developing Mirra: a travel app that generates personalized itineraries based on how you actually want to experience a place.
+
+I like work where understanding the problem deeply and communicating it clearly matter as much as building the solution.</p>
+  </div>
+  <h1 class="hero-name">Anika Bhatnagar</h1>
+</section>
+
+<!-- Scrollable content layers over hero -->
+<main class="content">
+
+  <section class="work-section" id="work">
+    <div class="work-grid">
+
+      <article class="work-item" data-project="ibm">
+        <div class="work-card">
+          <div class="work-card-img is-logo ibm-card">
+            <img src="images/ibm-logo.svg" alt="IBM">
+          </div>
+          <h3>IBM</h3>
+        </div>
+        <button class="detail-close" aria-label="Back" type="button">
+          <span class="arrow" aria-hidden="true"></span>
+        </button>
+        <div class="work-detail" aria-hidden="true">
+          <div class="detail-body">
+            <span class="detail-label">IBM / 2025 — Present</span>
+            <h2>OneTicket + Fyre</h2>
+            <p class="detail-descriptor">Internal IT tooling used by employees across the organization.</p>
+            <p class="detail-copy">OneTicket is IBM's internal IT ticketing system. I led the redesign of the landing page and FAQ experience and have since added significant functionality to the platform — reducing average triage time by 45%. I'm currently co-leading a full redesign of Fyre, one of IBM's core internal products, rethinking the experience from the ground up.</p>
+            <div class="detail-tags">
+              <span>Product Design</span>
+              <span>Systems</span>
+              <span>IBM</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="work-item" data-project="ai">
+        <div class="work-card">
+          <div class="work-card-img">
+            <img src="images/ai-solutions.jpg" alt="AI Solutions">
+          </div>
+          <h3>AI Solutions</h3>
+        </div>
+        <button class="detail-close" aria-label="Back" type="button">
+          <span class="arrow" aria-hidden="true"></span>
+        </button>
+        <div class="work-detail" aria-hidden="true">
+          <div class="detail-body">
+            <span class="detail-label">Consulting / Ongoing</span>
+            <h2>AI Solutions for Small Businesses</h2>
+            <p class="detail-descriptor">Custom software that helps small business owners put AI to work without forcing them to change how they operate.</p>
+            <p class="detail-copy">Each engagement starts the same way: I learn how the business actually runs before suggesting any technology. The first concrete example is Optimum Vision and Eye Care, a neuro-optometry practice that was turning away patients not because of capacity, but because of operational drag. I came in, learned the day-to-day, and built custom tooling that gave the CEO her time back and freed the team to focus on care.</p>
+            <div class="detail-tags">
+              <span>Ops Tooling</span>
+              <span>Custom Software</span>
+              <span>AI</span>
+            </div>
+          </div>
+          <div class="detail-media">
+            <img src="images/ai-solutions-detail.png" alt="">
+          </div>
+        </div>
+      </article>
+
+      <article class="work-item" data-project="mirra">
+        <div class="work-card">
+          <div class="work-card-img">
+            <img src="images/mirra/01-landing.jpg" alt="Mirra">
+          </div>
+          <h3>Mirra</h3>
+        </div>
+        <button class="detail-close" aria-label="Back" type="button">
+          <span class="arrow" aria-hidden="true"></span>
+        </button>
+        <div class="work-detail" aria-hidden="true">
+          <div class="detail-body">
+            <span class="detail-label">Personal Project / 2026 — Present</span>
+            <h2>Mirra</h2>
+            <p class="detail-descriptor">A travel app that plans like a well-traveled friend.</p>
+            <p class="detail-copy">Every travel tool either gives you a generic list or overwhelms you with options. Mirra generates itineraries the way a well-traveled friend would: geographically logical, experience-aware, and highly personalized. I built the full stack using Claude Code and designed the UI from scratch.</p>
+            <div class="detail-tags">
+              <span>Full Stack</span>
+              <span>UI</span>
+              <span>AI</span>
+            </div>
+          </div>
+          <div class="detail-media">
+            <img src="images/mirra/01-landing.jpg" alt="">
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="resume-section" id="resume">
+    <div class="resume-block">
+      <h3>Experience</h3>
+      <div class="resume-list">
+
+        <div class="resume-row">
+          <span class="resume-year">2025 — Present</span>
+          <div class="resume-entry">
+            <h4>UI Developer · IBM</h4>
+            <p class="resume-meta">San Jose, CA</p>
+            <p class="resume-desc">Shipping UI improvements to internal support tooling. Co-leading a ground-up redesign of IBM's Fyre, consolidating multiple legacy tools into a single Figma-prototyped interface that was approved for development after presenting to department managers. Pushed significant features into the ticketing platform that reduced average triage time by 45%.</p>
+          </div>
+        </div>
+
+        <div class="resume-row">
+          <span class="resume-year">2026 — Present</span>
+          <div class="resume-entry">
+            <h4>Founder & Builder · Mirra</h4>
+            <p class="resume-meta">Personal Project</p>
+            <p class="resume-desc">Built end-to-end with Claude Code: Next.js frontend, agentic LLM workflows, Google Places API, and multi-model AI integration that turns structured user inputs into mapped, personalized travel itineraries. Designed a two-step generation pipeline that assembles a master place list with neighborhood context, then arranges stops into geographically coherent days. Handles routing logic, itinerary formatting, and real-time place data to produce something that actually feels planned, not just generated.</p>
+          </div>
+        </div>
+
+        <div class="resume-row">
+          <span class="resume-year">April 2026</span>
+          <div class="resume-entry">
+            <h4>Custom Staff Portal · Optimum Vision &amp; Eye Care</h4>
+            <p class="resume-meta">Palo Alto, CA · Freelance</p>
+            <p class="resume-desc">Internal operations portal for a neuro-optometry practice, built to stop staff from constantly interrupting the doctor for routine decisions. Core features: interactive decision flowcharts for insurance verification and patient triage, an escalation system that captures unanswered questions and folds the answers back into a searchable knowledge base, and an integrated task manager for assigning and tracking work across the practice. Used daily by ~12 staff across front desk, technicians, and therapists.</p>
+          </div>
+        </div>
+
+        <div class="resume-row">
+          <span class="resume-year">2025</span>
+          <div class="resume-entry">
+            <h4>Web Developer · Kismet Matchmaking</h4>
+            <p class="resume-meta">Palo Alto, CA · Contract</p>
+            <p class="resume-desc">Partnered with the founder on product strategy and roadmap; designed, developed, and launched the marketing website from concept through deployment. Translated a premium matchmaking brand into a polished web presence, owning the full stack from visual design and copy architecture to build and launch. Delivered a site that reflects the positioning of the service and gives the founder a credible foundation for client acquisition.</p>
+          </div>
+        </div>
+
+        <div class="resume-row">
+          <span class="resume-year">2024</span>
+          <div class="resume-entry">
+            <h4>Technical Product Intern · Chobani</h4>
+            <p class="resume-meta">New York, NY</p>
+            <p class="resume-desc">Identified a bottleneck in the data team's manual labeling workflow and built an internal tool to fix it, cutting labeling time by over 50%. Integrated Snowflake and OpenAI API to create a consolidated pipeline with direct data access and AI-assisted labeling, replacing a fragmented process with one the team actually used.</p>
+          </div>
+        </div>
+
+        <div class="resume-row">
+          <span class="resume-year">2023</span>
+          <div class="resume-entry">
+            <h4>Prompt Engineer Intern · MathGPT.ai / YouWeb Incubator</h4>
+            <p class="resume-meta">Palo Alto, CA</p>
+            <p class="resume-desc">Contributed to early-stage development of MathGPT, an AI math tutor recognized by Forbes. Engineered 20+ algorithms expanding problem-solving coverage 10×.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="resume-block">
+      <h3>Education</h3>
+      <div class="resume-list">
+        <div class="resume-row">
+          <span class="resume-year">2025</span>
+          <div class="resume-entry">
+            <h4>B.S. Computer Science, Minor in English</h4>
+            <p class="resume-meta">Loyola Marymount University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2 class="contact-title">Get in Touch</h2>
+    <div class="contact-links">
+      <a href="mailto:anika101.ab@gmail.com">Email ↗</a>
+      <a href="https://www.linkedin.com/in/anika-bhatnagar/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </section>
+
+  <!-- Outro buffer so the clone fully slides away before contact starts entering -->
+  <div class="outro-buffer"></div>
+
+  <!-- Buffer so the fixed clone gets scroll space, like the top 160vh gap -->
+  <div class="clone-spacer"></div>
+
+</main>
+
+<!-- Loopback hero clone (identical to hero) -->
+<section class="hero hero-clone" aria-hidden="true">
+  <div class="hero-meta">
+    <div class="time">
+      <span class="globe" aria-hidden="true"></span>
+      <span class="clock-clone">--:-- --</span>
+    </div>
+    <p class="welcome">Hello! I'm a product-minded engineer based in the Bay Area. At IBM, I build and design internal tools used across the organization. Outside of that, I work with small businesses on AI integrations that fit how they operate, and I'm also developing Mirra: a travel app that generates personalized itineraries based on how you actually want to experience a place.
+
+I like work where understanding the problem deeply and communicating it clearly matter as much as building the solution.</p>
+  </div>
+  <h1 class="hero-name">Anika Bhatnagar</h1>
+</section>
+
+<script src="main.js?v=40"></script>
+</body>
+</html>
