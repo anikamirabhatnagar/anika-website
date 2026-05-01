@@ -116,8 +116,9 @@ nav.site-nav a:hover { opacity: 0.6; }
   animation-delay: 1.2s;
 }
 @keyframes pulse-ring {
-  0%   { inset: -2px; opacity: 0.6; }
-  100% { inset: -10px; opacity: 0; }
+  0%   { inset: -2px; opacity: 0; }
+  15%  { opacity: 0.55; }
+  100% { inset: -12px; opacity: 0; }
 }
 .hero-meta .welcome {
   font-size: 15px;
