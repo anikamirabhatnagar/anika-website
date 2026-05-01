@@ -292,7 +292,7 @@ nav.site-nav a:hover { opacity: 0.6; }
 .contact-text { flex: 1 1 auto; min-width: 0; }
 .contact-portrait {
   flex: 0 0 auto;
-  width: clamp(140px, 16vw, 220px);
+  width: clamp(160px, 18vw, 250px);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
@@ -305,7 +305,7 @@ nav.site-nav a:hover { opacity: 0.6; }
   object-fit: cover;
   object-position: top center;
   display: block;
-  transform: scale(1.18);
+  transform: scale(1.28);
   transform-origin: top center;
 }
 .contact-title {
