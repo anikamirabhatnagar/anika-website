@@ -1,0 +1,11 @@
+{
+  "redirects": [
+    { "source": "/resume.html", "destination": "/#resume", "permanent": true },
+    { "source": "/contact.html", "destination": "/#contact", "permanent": true },
+    { "source": "/selected-works.html", "destination": "/#work", "permanent": true },
+    { "source": "/work/oneticket-fyre.html", "destination": "/#ibm", "permanent": true },
+    { "source": "/work/mirra.html", "destination": "/#mirra", "permanent": true },
+    { "source": "/work/optimum-vision.html", "destination": "/#solutions", "permanent": true },
+    { "source": "/work/:path*", "destination": "/#work", "permanent": true }
+  ]
+}

@@ -251,4 +251,16 @@ window.__updateHero = () => {};
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') close();
   });
+
+  // Deep-link: #ibm, #solutions, #mirra auto-opens the matching project
+  const openFromHash = () => {
+    const h = (location.hash || '').replace('#', '');
+    const idx = items.findIndex(it => it.id === h);
+    if (idx >= 0) {
+      items[idx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(() => open(idx), 600);
+    }
+  };
+  window.addEventListener('load', openFromHash);
+  window.addEventListener('hashchange', openFromHash);
 })();
