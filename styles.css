@@ -298,6 +298,7 @@ nav.site-nav a:hover { opacity: 0.6; }
   overflow: hidden;
   background: #18181b;
   margin-right: clamp(2rem, 8vw, 8rem);
+  margin-top: -2.5rem;
 }
 .contact-portrait img {
   width: 100%;
@@ -305,7 +306,7 @@ nav.site-nav a:hover { opacity: 0.6; }
   object-fit: cover;
   object-position: top center;
   display: block;
-  transform: scale(1.28);
+  transform: scale(1.18);
   transform-origin: top center;
 }
 .contact-title {
