@@ -183,6 +183,7 @@ nav.site-nav a:hover { opacity: 0.6; }
   overflow: hidden;
   background: #18181b;
   position: relative;
+  border-radius: 6px;
 }
 .work-card-img img {
   width: 100%;
