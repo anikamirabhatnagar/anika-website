@@ -285,14 +285,14 @@ nav.site-nav a:hover { opacity: 0.6; }
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 4rem;
 }
 .contact-text { flex: 1 1 auto; min-width: 0; }
 .contact-portrait {
   flex: 0 0 auto;
-  width: clamp(220px, 28vw, 360px);
+  width: clamp(180px, 22vw, 280px);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
@@ -302,6 +302,7 @@ nav.site-nav a:hover { opacity: 0.6; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   display: block;
 }
 .contact-title {
