@@ -512,6 +512,21 @@ nav.site-nav a:hover { opacity: 0.6; }
   letter-spacing: 0.05em;
   color: var(--ink-soft);
 }
+.detail-link {
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  margin-bottom: 1.6rem;
+  margin-top: -0.4rem;
+}
+.detail-link a {
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule);
+  transition: border-color 0.25s, color 0.25s;
+}
+.detail-link a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
 .detail-close {
   position: absolute;
   top: -2.75rem;
