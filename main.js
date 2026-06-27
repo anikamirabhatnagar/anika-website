@@ -24,7 +24,7 @@ window.__updateHero = () => {};
     const y = window.scrollY;
     const h = window.innerHeight;
     // Hero stays fully visible for the first ~40vh, then fades over the next 1.2 viewports.
-    const startFade = h * 0.4;
+    const startFade = h * 0.2;
     const fadeRange = h * 1.2;
     const t = Math.min(Math.max((y - startFade) / fadeRange, 0), 1);
     const eased = t * t * (3 - 2 * t);
